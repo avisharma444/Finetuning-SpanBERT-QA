@@ -1,4 +1,4 @@
-# 📘 Fine-Tuning SpanBERT & SpanBERT-CRF on SQuAD v2
+# 📘 Fine-Tuning SpanBERT & SpanBERT-CRF on SQuAD v2 for Question-Answering
 
 This repository contains the implementation of **SpanBERT** and **SpanBERT-CRF** fine-tuned for **extractive question answering** on the **SQuAD v2** dataset. It adapts the Hugging Face QA pipeline while introducing custom span alignment logic and postprocessing for handling long contexts, unanswerable questions, and multiple valid answers.
 
