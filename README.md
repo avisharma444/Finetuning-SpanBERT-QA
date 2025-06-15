@@ -1,6 +1,8 @@
-# 📘 Fine-Tuning SpanBERT & SpanBERT-CRF on SQuAD v2 for Question-Answering
+# 📘 Fine-Tuning SpanBERT on SQuAD v2 for Question-Answering
 
 This repository contains the implementation of **SpanBERT** and **SpanBERT-CRF** fine-tuned for **extractive question answering** on the **SQuAD v2** dataset. It adapts the Hugging Face QA pipeline while introducing custom span alignment logic and postprocessing for handling long contexts, unanswerable questions, and multiple valid answers.
+
+Find the model here - https://www.kaggle.com/models/avisharma444/fm2
 
 ---
 
@@ -10,17 +12,6 @@ This repository contains the implementation of **SpanBERT** and **SpanBERT-CRF**
 - **Models**: SpanBERT (base), optionally extended with CRF
 - **Task**: Predict the start and end span of the answer in a given context (or predict "no answer")
 - **Evaluation Metric**: Exact Match (EM)
-
----
-
-## 📁 Files
-
-| File | Description |
-|------|-------------|
-| `spanbert.ipynb` | Full implementation for training, evaluation, and postprocessing for SpanBERT model|
-| `spanbert-crf.ipynb` | Full implementation for training, evaluation, and postprocessing for Custom CRF Layer + SpanBERT model|
-| `spanbert.pth` | Saved model checkpoint with the highest EM score for SpanBERT model|
-| `spanbert-crf.pth` | Saved model checkpoint with the highest EM score for SpanBERT+CRF model|
 
 ---
 
